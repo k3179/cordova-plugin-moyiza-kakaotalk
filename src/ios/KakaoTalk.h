@@ -2,9 +2,9 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface KakaoTalk : CDVPlugin
-
-- (void) login:(CDVInvokedUrlCommand*)command;
-- (void) logout:(CDVInvokedUrlCommand*)command;
 - (void) share:(CDVInvokedUrlCommand*)command;
+- (void) shareText:(CDVInvokedUrlCommand*)command;
+- (void) shareStory:(CDVInvokedUrlCommand*)command;
 @end
+
 

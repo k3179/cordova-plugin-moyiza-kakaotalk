@@ -83,9 +83,9 @@
           </array>
         </config-file>
         
-        <framework src="src/ios/KakaoCommon.framework" custom="true" />
-        <framework src="src/ios/KakaoLink.framework" custom="true" />
-        <framework src="src/ios/KakaoOpenSDK.framework" custom="true" />
+        <framework src="src/ios/KakaoCommon.framework" custom="true" embed="true" />
+        <framework src="src/ios/KakaoLink.framework" custom="true" embed="true" />
+        <framework src="src/ios/KakaoOpenSDK.framework" custom="true" embed="true" />
 
         <source-file src="src/ios/KakaoTalk.m" />
         <header-file src="src/ios/KakaoTalk.h" />
