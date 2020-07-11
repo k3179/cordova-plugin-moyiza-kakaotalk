@@ -51,4 +51,48 @@
 		<source-file src="src/android/KakaoTalk.java" target-dir="src/com/moyiza/plugin/kakaotalk" />
 		<source-file src="src/android/StoryLink.java" target-dir="src/com/moyiza/plugin/kakaotalk" />
 	</platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KakaoTalk">
+                <param name="ios-package" value="com.moyiza.plugin.kakaotalk.KakaoTalk" />
+            </feature>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="KAKAO_APP_KEY">
+            <string>$KAKAO_APP_KEY</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                    <key>CFBundleURLSchemes</key>
+                    <array>
+                        <string>kakao$KAKAO_APP_KEY</string>
+                    </array>
+                </dict>
+            </array>
+        </config-file>
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+          <array>
+            <string>kakao$KAKAO_APP_KEY</string>
+            <string>kakaokompassauth</string>
+            <string>storykompassauth</string>
+            <string>kakaolink</string>
+            <string>kakaotalk-4.5.0</string>
+            <string>kakaostory-2.9.0</string>
+            <string>storylink</string>
+          </array>
+        </config-file>
+        
+        <framework src="src/ios/KakaoCommon.framework" custom="true" />
+        <framework src="src/ios/KakaoLink.framework" custom="true" />
+        <framework src="src/ios/KakaoOpenSDK.framework" custom="true" />
+
+        <source-file src="src/ios/KakaoTalk.m" />
+        <header-file src="src/ios/KakaoTalk.h" />
+        <source-file src="src/ios/StoryLinkHelper.m" />
+        <header-file src="src/ios/StoryLinkHelper.h" />
+        <source-file src="src/ios/StoryPostingActivity.m" />
+        <header-file src="src/ios/StoryPostingActivity.h" />        
+
+    </platform>
 </plugin>

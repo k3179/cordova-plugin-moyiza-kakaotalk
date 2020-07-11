@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-moyiza-kakaotalk",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# cordova-plugin-moyiza-kakaotalk\"",
   "cordova": {
     "id": "cordova-plugin-moyiza-kakaotalk",
     "platforms": [
@@ -12,6 +12,18 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "k3179",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k3179/cordova-plugin-moyiza-kakaotalk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/k3179/cordova-plugin-moyiza-kakaotalk/issues"
+  },
+  "homepage": "https://github.com/k3179/cordova-plugin-moyiza-kakaotalk#readme"
 }
