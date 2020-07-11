@@ -1,0 +1,24 @@
+repositories {
+	mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+	compile('com.kakao.sdk:kakaotalk:1.13.0@aar') {
+		transitive = true
+	}
+	compile('com.kakao.sdk:kakaolink:1.13.0@aar') {
+		transitive = true
+	}
+	compile('com.kakao.sdk:message-template-1.13.0@aar') {
+		transitive = true
+	}
+	compile('com.kakao.sdk:network-1.13.0@aar') {
+		transitive = true
+	}
+	compile('com.kakao.sdk:util-1.13.0@aar') {
+		transitive = true
+	}
+}
