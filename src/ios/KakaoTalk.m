@@ -124,7 +124,7 @@
 
     NSString* link = options[@"link"];
 
-    NSString* image = options[@"image"];
+    NSString* image = options[@"thumb"];
 
     
 
@@ -186,7 +186,7 @@
 
         NSString* link = options[@"link"];
 
-        NSString* image = options[@"image"];
+        NSString* image = options[@"thumb"];
 
         NSString* social = options[@"social"];
 
